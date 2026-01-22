@@ -1,22 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header class="header">
-        <nav class="navBar"></nav>
+      <nav class="navBar"></nav>
     </header>
     <main class="mainArea">
-        <section class="aboutME">
-            
-        </section>
+      <input type="checkbox" id="checkbox" /> Change Theme
+      <section class="aboutME">
+        <div class="aboutMeText">
+          <h2 class="heading2">About Me</h2>
+          <p>This is about me</p>
+        </div>
+        <div class="aboutMeImage">
+          <img src="me.png" alt="My image" />
+        </div>
+      </section>
+      <section class="aboutYou">
+        <h2 class="heading2">About You</h2>
+        <div class="aboutYouForm">
+          <form method="POST">
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" required /><br /><br />
+            <label for="age">Age:</label><br />
+            <input type="number" id="age" name="age" required /><br /><br />
+            <label for="address">Address:</label><br />
+            <textarea
+              id="address"
+              name="address"
+              rows="4"
+              cols="50"
+              required
+            ></textarea
+            ><br /><br />
+            <label>Favorite Subject:</label><br />
+            <input type="checkbox" id="math" name="subject" value="Math" />
+            <label for="math">Math</label><br />
+            <input
+              type="checkbox"
+              id="science"
+              name="subject"
+              value="Science"
+            />
+            <label for="science">Science</label><br />
+            <input
+              type="checkbox"
+              id="history"
+              name="subject"
+              value="History"
+            />
+            <label for="history">History</label> <br />
+
+            <label for="otherFavSubject">Other:</label><br />
+            <input
+              type="text"
+              id="otherFavSubject"
+              name="otherFavSubject"
+              required
+            /><br /><br />
+
+            <!-- <label>Favorite Singer:</label><br />
+            <input type="radio" id="singer1" name="singer" value="Singer 1" />
+            <label for="singer1">Singer 1</label><br />
+            <input type="radio" id="singer2" name="singer" value="Singer 2" />
+            <label for="singer2">Singer 2</label><br />
+            <input type="radio" id="singer3" name="singer" value="Singer 3" />
+            <label for="singer3">Singer 3</label><br /><br /> -->
+
+            <label for="movie">Favorite:</label><br />
+            <input type="radio" id="favMSRadio" name="favMSRadio" /> Movie
+            <br />
+            <input type="radio" id="favMSRadio" name="favMSRadio" /> Series
+            <br />
+            <input
+              type="text"
+              id="movie"
+              name="movie"
+              placeholder="The Rookie"
+              required
+            /><br /><br />
+            <label for="password">Password:</label><br />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+            /><br /><br />
+            <button type="submit" class="submitButton">Submit</button>
+          </form>
+        </div>
+      </section>
     </main>
-    <footer>
-        <p>made by @me 2026</p>
+    <footer class="footer">
+      <hr />
+      <p class="footerText">made by @me 2026</p>
     </footer>
-</body>
+  </body>
 </html>
