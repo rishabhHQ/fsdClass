@@ -1,43 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Grid</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-    <h1>Student Details</h1>
+      <h1>Student Details</h1>
     </header>
 
-    
-    <label for="theme"> Change Theme: </label>
-    <input type="checkbox" id="theme" class="container" name="theme">
-    
+    <label for="theme" class="themeChanger"> Change Theme: </label>
+    <input type="checkbox" id="theme" class="themeChanger" name="theme" />
 
     <div class="container">
-     <div class="cards">
-      <div class="card">
-        <h3>Name:</h3>
-        <p>Rishabh Paudel</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Name:</h3>
+          <p>Rishabh Paudel</p>
+        </div>
+
+        <div class="card">
+          <h3>UID:</h3>
+          <p>24BCS10110</p>
+        </div>
+
+        <div class="card">
+          <h3>Attendence:</h3>
+          <p>100%</p>
+        </div>
+
+        <div class="card">
+          <h3>Semester:</h3>
+          <p>4</p>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>UID:</h3>
-        <p>24BCS10110</p>
+      <div class="table-box">
+        <hr />
+        <h2>Courses & Attendance (4)</h2>
+        <hr />
+        <table>
+          <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Attendance</th>
+            <th>Semester</th>
+          </tr>
+          <tr>
+            <td>CSE201</td>
+            <td>Data Structures</td>
+            <td>100%</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>CSE202</td>
+            <td>Operating Systems</td>
+            <td>100%</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>CSE203</td>
+            <td>Full Stacks</td>
+            <td>100%</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>TPP201</td>
+            <td>Aptitude</td>
+            <td>100%</td>
+            <td>4</td>
+          </tr>
+        </table>
       </div>
 
-      <div class="card">
-        <h3>Attendence:</h3>
-        <p>100%</p>
+      <div class="contact">
+        <hr />
+        <h2>Contact</h2>
+        <hr />
+        <table>
+          <tr>
+            <th>Whatsapp</th>
+            <th>Email</th>
+            <th>Website</th>
+            <!-- <th>Semester</th> -->
+          </tr>
+          <tr>
+            <td>6284056664</td>
+            <td>24bcs10110@gmail.com</td>
+            <td>
+              <a target="_blank" href="https://rishabh-2d-portfolio.netlify.app"
+                >Click Here!</a
+              >
+            </td>
+            <!-- <td>4</td> -->
+          </tr>
+        </table>
       </div>
 
-      <div class="card">
-        <h3>Semester:</h3>
-        <p>4</p>
-      </div>
-      </div>
+      <hr />
+      <footer>© 2026 University Management System | Student Dashboard</footer>
     </div>
-</body>
+  </body>
 </html>
