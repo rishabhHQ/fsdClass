@@ -1,0 +1,43 @@
+body {
+    background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    background-color: rgb(219, 216, 221);
+    color: green;
+    padding: 20px;
+    text-align: center;
+    /* box-shadow: 0 4px 10px rgb(21, 84, 64); */
+}
+
+.container {
+   padding: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: rgb(243, 237, 237);
+    padding: 20px;
+    box-shadow: 0 4px 10px grey;
+    border-radius: 15px;   
+    text-align: center;    
+}
+
+.card h3 {
+    color: rgb(0, 193, 29);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 200ms;
+}
+
+#theme:checked ~ .container {
+    background-color: rgb(230, 230, 230);
+    transition: 200ms;
+}
