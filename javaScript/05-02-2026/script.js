@@ -26,15 +26,31 @@ function riyalFun2() {
     document.getElementById("daRiyalText").innerText = "Coursor is outside div";
 }
 
-const bulbChalao = document.getElementById("bulbBtn");
-bulbChalao.addEventListener("click", bulbFun1);
-bulbChalao.addEventListener("click", bulbFun2);
-// bulbChalao.addEventListener("")
-function bulbFun1() {
-    document.getElementById("bulbImages").innerText = "./assets/onn.png"
-    document.getElementById("bulbBtn").innerHTML = "turn off";
-}
-function bulbFun2() {
-    document.getElementById("bulbImages").innerText = "./assets/off.png"
-    document.getElementById("bulbBtn").innerHTML = "turn onn";
-}
+// const bulbChalao = document.getElementById("bulbBtn");
+// bulbChalao.addEventListener("click", bulbFun1);
+// bulbChalao.addEventListener("click", bulbFun2);
+// // bulbChalao.addEventListener("")
+// function bulbFun1() {
+//     document.getElementById("bulbImages").innerText = "./assets/onn.png"
+//     document.getElementById("bulbBtn").innerHTML = "turn off";
+// }
+// function bulbFun2() {
+//     document.getElementById("bulbImages").innerText = "./assets/off.png"
+//     document.getElementById("bulbBtn").innerHTML = "turn onn";
+// }
+
+const bulbBtn = document.getElementById("bulbBtn");
+const bulbImage = document.getElementById("bulbImage");
+
+let isOn = false;
+
+bulbBtn.addEventListener("click", () => {
+    if (isOn) {
+        bulbImage.src = "./assets/off.png";
+        bulbBtn.innerHTML = "Turn On";
+    } else {
+        bulbImage.src = "./assets/onn.png";
+        bulbBtn.innerHTML = "Turn Off";
+    }
+    isOn = !isOn;
+});
