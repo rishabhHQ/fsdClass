@@ -2,6 +2,7 @@ document.getElementById("p1").innerHTML = "Noic1.1";
 document.getElementById("p2").style.color = "white";
 
 function myFunction() {
+    // document.getElementById("dateTimeButtonDiv").style.display = "hidden";
     document.getElementById("dateTimeButtonDiv").innerHTML = Date();
 }
 
