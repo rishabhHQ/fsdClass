@@ -14,7 +14,7 @@ console.log(process.cwd());     // cwd: current workin directory, o/p: path
 console.log(process.pid);       // id of nodejs application
 
 // 3. colors
-const color = require('colors');
-console.log(color.red("Hello"));
-console.log(color.yellow("World"));
-console.log(color.black("good"));
+const color = require('colors');    // before usin tis first do npm install colors
+console.log(color.red("Hello"));    // red color
+console.log(color.yellow("World")); // yellow color
+console.log(color.black("good"));   // black color
