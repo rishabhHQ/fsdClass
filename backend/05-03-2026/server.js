@@ -8,3 +8,15 @@ http.createServer((req,resp) => {       // request and responce
     // resp.end()                       // this will also work
 
 }).listen(4800);                        // binds to particular port (4800 in this case)
+
+// 06-03-2026
+
+const http2 = require('http');
+http2.createServer((req,resp) => {       
+
+    resp.setHeader("content-Type", "text/html");        // this will fix the error which was comin without this
+    resp.write("<h2>Hello, this made from node js and this has different port now its nodemon</h2>");    
+
+    resp.end("Learning Node");              
+
+}).listen(5800);                        
