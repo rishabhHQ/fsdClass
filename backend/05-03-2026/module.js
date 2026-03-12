@@ -9,6 +9,10 @@ const xy = require('os');
 console.log(xy.platform());     // o/p = win32 even if its 64 it will be win32
 console.log(xy.hostname());     // user/client name
 console.log(xy.cpus());         // cpu information
+console.log(xy.totalmem());
+console.log(xy.freemem());
+console.log(xy.uptime());
+console.log(xy.cpus());
 // 
 console.log(process.cwd());     // cwd: current workin directory, o/p: path
 console.log(process.pid);       // id of nodejs application
