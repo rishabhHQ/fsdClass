@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const uri = "mongodb+srv://paudel_83:rishabh@cluster0.jfna4lh.mongodb.net/schooldb";            // connection string
+const uri = "mongodb+srv://<your_username>:<your_db_password>@cluster0.jfna4lh.mongodb.net/schooldb";            // connection string
 
 const studentSchema = new mongoose.Schema({
     name: String,
