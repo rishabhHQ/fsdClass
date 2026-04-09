@@ -3,3 +3,7 @@ node_modules/
 
 # App.js
 app.js
+app2.js
+
+# .env
+.env
